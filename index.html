@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Sunrise diner survey form</title>
+</head>
+<body>
+    <h1 id="title">Sunrise Diner Survey Form</h1>
+    <p id="description">Thank you for taking the time to help us improve our services</p>
+    <form id="survey-form">
+        <fieldset>
+            <label id="name-label" for="name">Name <input id="name" type="text" required placeholder="Enter your name" name="name" ></label>
+            <label id="email-label" for="email">Email <input id="email" type="email" required placeholder="Enter your email" name="email"></label>
+            <label id="number-label" for="number">Age <input id="number" type="number" required min="10" max="120" name="age" placeholder="How old are you?"></label>
+        </fieldset>
+    
+        <fieldset>
+        
+            <label for="referrer">How did you learn about us?
+            <select name="referrer" id="dropdown">
+                <option value="">Select one option</option>
+                <option value="1">Search engine(Google, Yahoo, e.t.c.)</option>
+                <option value="2">Recommended by friend or colleague</option>
+                <option value="3">Social media</option>
+                <option value="4">Blog or publication</option>
+                <option value="5">Third party review</option>
+            </select>
+            </label>
+            <label for="quality">What did you order and how was the quality of food? <textarea rows="3" cols="30" placeholder="Write a short description" name="quality"></textarea></label>
+            <p>Would you recommend your friends to visit us?</p>
+            <label><input type="radio" name="recommendation" class="straight" value="Definitely" checked> Definitely</label>
+            <label><input type="radio" name="recommendation" class="straight" value="Maybe"> Maybe</label>
+            <label><input type="radio" name="recommendation" class="straight" value="No"> No</label>
+        
+        </fieldset>
+
+        <fieldset>
+        
+            <label>How would you rate the quality of our food?
+            <select name="value" id="dropdown-2">
+                <option value="">select one</option>
+                <option value="1">1 (Very Poor)</option>
+                <option value="2">2 (Poor)</option>
+                <option value="3">3 (Average)</option>
+                <option value="4">4 (Good)</option>
+                <option value="5">5 (Excellent)</option>
+            </select>
+            </label>
+
+            <p>Which features do you wish we had?</p>
+            <label><input type="checkbox" value="Loyalty Program" name="features" checked class="straight"> Loyalty Program</label>
+            <label><input type="checkbox" value="online reserve" name=features" class="straight"> Online Reservation</label>
+            <label><input type="checkbox" value="Social media presence" name=features" class="straight"> Social Media Presence</label>
+            <label><input type="checkbox" value="Discounts" name=features" class="straight"> Discounts</label>
+            <label><input type="checkbox" value="Themed events" name=features" class="straight"> Regular themed party</label>
+
+            <label for="improvement">Is there anything we can do to motivate you to visit us more often? <textarea rows="3" cols="30" name="improvement"></textarea></label>
+            
+        </fieldset>
+        <input id="submit" type="submit" value="Submit">
+    </form>
+    
+</body>
+</html>
